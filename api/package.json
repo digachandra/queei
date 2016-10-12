@@ -1,0 +1,29 @@
+{
+  "name": "queei-api",
+  "version": "1.0.0",
+  "description": "Queei API folder, all business transaction code stored in this folder",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digachandra/queei.git"
+  },
+  "keywords": [
+    "Queei",
+    "Question",
+    "Answer",
+    "Framework",
+    "NodeJS",
+    "ExpressJS",
+    "MongoDB",
+    "Mongoose"
+  ],
+  "author": "Septhianto Diga Chandra <hi@digachandra.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digachandra/queei/issues"
+  },
+  "homepage": "https://github.com/digachandra/queei#readme"
+}
