@@ -1,6 +1,4 @@
-![alt tag](.asset/.logo.png "Queei Logo")
-
-## Queei
+<img src=".asset/.logo.png" title="Queei Logo" height="50">
 
 Queei is a **question answer** platform build with **NodeJs**, **ExpressJS**, **MongoDB**, **Mongoose**. with the main features:
 
