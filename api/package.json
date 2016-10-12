@@ -25,5 +25,18 @@
   "bugs": {
     "url": "https://github.com/digachandra/queei/issues"
   },
-  "homepage": "https://github.com/digachandra/queei#readme"
+  "homepage": "https://github.com/digachandra/queei#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "cors": "^2.8.1",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.3",
+    "node-sass": "^3.10.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.1.2"
+  }
 }
