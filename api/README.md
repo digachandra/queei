@@ -23,9 +23,9 @@ npm install -D mocha
 | GET    | - | `/questions` | Get list of questions
 | GET    | - | `/questions/:id` | Get detail of selected question
 | GET    | - | `/questions/:userId` | Get list of selected user questions
-| POST   | - | `/questions/:userId/:token` | Post a question **(authorized only)**
-| PUT    | - | `/questions/:id/:userId/:token` | Update a question **(authorized only)**
-| DELETE | - | `/questions/:id/:userId/:token` | Delete a question **(authorized only)**
+| POST   | - | `/questions/:userId` | Post a question **(authorized only)**
+| PUT    | - | `/questions/:id/:userId` | Update a question **(authorized only)**
+| DELETE | - | `/questions/:id/:userId` | Delete a question **(authorized only)**
 
 #### Answers
 
@@ -33,21 +33,21 @@ npm install -D mocha
 |--------|--------|-----|-------------
 | GET    | - | `/answers/:questionId` | Get list answers of a question
 | GET    | - | `/answers/:id` | Get detail of selected answer
-| GET    | - | `/answers/:id/:questionId/:userId/:token` | Upvote answer of a question **(authorized only)**
-| GET    | - | `/answers/:id/:questionId/:userId/:token` | Downvote answer of a question **(authorized only)**
+| GET    | - | `/answers/:id/:questionId/:userId` | Upvote answer of a question **(authorized only)**
+| GET    | - | `/answers/:id/:questionId/:userId` | Downvote answer of a question **(authorized only)**
 | POST   | - | `/answers/:userId/:token` | Post a answer **(authorized only)**
-| PUT    | - | `/answers/:id/:userId/:token` | Update a answer **(authorized only)**
-| DELETE | - | `/answers/:id/:userId/:token` | Delete a answer **(authorized only)**
+| PUT    | - | `/answers/:id/:userId` | Update a answer **(authorized only)**
+| DELETE | - | `/answers/:id/:userId` | Delete a answer **(authorized only)**
 
 ### Users
 
 | Method | Tested | URL | Description
 |--------|--------|-----|-------------
-| GET    | - | `/users/:token` | Get list users **(admin only)**
-| GET    | - | `/users/:id` | Get detail of selected user
+| GET    | - | `/users/` | Get list users **(admin only)**
+| GET    | - | `/users/:username` | Get detail of selected user
 | POST   | - | `/users` | Create a user
-| PUT    | - | `/users/:id/:token` | Update info of a user **(authorized only)**
-| DELETE | - | `/users/:id/:token` | Delete specific user **(admin only)**
+| PUT    | - | `/users/:username` | Update info of a user **(authorized only)**
+| DELETE | - | `/users/:username` | Delete specific user **(admin only)**
 
 
 ```
