@@ -8,7 +8,7 @@ module.exports = {
 }
 
 function createRecord(req, res, next){
-  var record = new Answers({
+  var record = new Questions({
     title:req.body.title
   })
 
@@ -17,7 +17,7 @@ function createRecord(req, res, next){
 }
 
 function readRecord(req, res, next){
-  Answers.find({},(err, record) => {
+  Questions.find({},(err, record) => {
     if(record.length >= 1)
       res.status(200).json(record)
     else
@@ -26,7 +26,7 @@ function readRecord(req, res, next){
 }
 
 function updateRecord(req, res, next){
-  Answers.findOne({
+  Questions.findOne({
     _id:req.params.id
   },(err, record) => {
     if(err) throw err
@@ -44,7 +44,7 @@ function updateRecord(req, res, next){
 }
 
 function deleteRecord(req, res, next){
-  Answers.findOne({
+  Questions.findOne({
     _id:req.params.id
   },(err, record) => {
     if(err) throw err
