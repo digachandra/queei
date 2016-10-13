@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const users = require('../controllers/questions')
+const users = require('../controllers/users')
 const questions = require('../controllers/questions')
 const answers = require('../controllers/answers')
 
