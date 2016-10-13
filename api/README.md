@@ -8,6 +8,7 @@ this folder dedicated to store all API that used in Queei
 ```
 npm install -S express mongoose body-parser
 npm install -S ejs node-sass chai chai-http cors
+npm install -S lodash
 npm install -D mocha
 ```
 
