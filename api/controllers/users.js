@@ -9,7 +9,8 @@ module.exports = {
 
 function createRecord(req, res, next){
   var record = new Users({
-    title:req.body.title
+    username:req.body.username,
+    password:req.body.password
   })
 
   record.save()
@@ -31,7 +32,8 @@ function updateRecord(req, res, next){
   },(err, record) => {
     if(err) throw err
     if(record){
-      record.title = req.body.title
+      record.username = req.body.username
+      record.password = req.body.password
 
       record.save((err)=> {
         if(err) throw err
