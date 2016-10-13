@@ -11,6 +11,8 @@ npm install -S ejs node-sass chai chai-http cors
 npm install -D mocha
 ```
 
+---
+
 ### API Endpoint
 
 #### Questions
@@ -47,6 +49,14 @@ npm install -D mocha
 | DELETE | `/users/:token` | Delete a user **(admin only)**
 
 
-> **admin only** : specific person that can access all of this API
+```
+Note:
 
-> **authorized only** : registered user
+> Admin only
+>> Specific person that can access all of this API
+
+> Authorized only
+>> Registered user
+```
+
+---
